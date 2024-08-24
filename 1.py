@@ -1,4 +1,4 @@
-﻿import matplotlib
+import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -11,7 +11,5 @@ plt.xlabel("height")
 plt.ylabel("weight")
 reg=linear_model.LinearRegression()
 reg.fit(height,weight)
-X_height = float(input()) 
-z = [[X_height]]
-prediction = reg.predict(z)
-print(prediction[0]) 
+X_height=[[12.0]]
+print(reg.predict(X_height))
