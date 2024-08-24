@@ -14,4 +14,4 @@ reg.fit(height,weight)
 X_height = float(input()) 
 z = [[X_height]]
 prediction = reg.predict(z)
-print(pediction)
+print(prediction[0]) 
